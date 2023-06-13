@@ -1,0 +1,58 @@
+<mat-card>
+    <mat-card-title>Novo Cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="nome" [(ngModel)]="cliente.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="imgUrl" [(ngModel)]="cliente.imgUrl" name="imgUrl">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="logradouro" [(ngModel)]="cliente.endereco.logradouro" name="logradouro">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="numero" [(ngModel)]="cliente.endereco.numero" name="numero">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="complemento" [(ngModel)]="cliente.endereco.complemento" name="complemento">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="cep" [(ngModel)]="cliente.endereco.cep" name="cep">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="bairro" [(ngModel)]="cliente.endereco.bairro" name="bairro">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="cidade" [(ngModel)]="cliente.endereco.cidade" name="cidade">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="estado" [(ngModel)]="cliente.endereco.estado" name="estado">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="pais" [(ngModel)]="cliente.endereco.pais" name="pais">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="rg" [(ngModel)]="cliente.rg" name="rg">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="cpf" [(ngModel)]="cliente.cpf" name="cpf">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="telefone" [(ngModel)]="cliente.telefone" name="telefone">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="email" [(ngModel)]="cliente.email" name="email">
+        </mat-form-field>
+       
+
+    </form>
+</mat-card>
+
+<button mat-raised-button (click)="createProduct()" color="primary">
+    Cadastrar
+  </button>
+
+<button mat-raised-button (click)="cancel()" >
+  Cancel
+  </button>
+  
